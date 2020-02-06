@@ -1,7 +1,6 @@
 # Life Expectancy
-
-In this project, we perform multiple linear regression to find the key features that affect life expectancy in different countries.
-The overhead goal for this project is to find _which public health factors have the most significant impact on life expectancy in different countries_.
+### Project Description and Motivaton
+Life expectancy is the average number of years that a group of persons in a population is expected to live. The intention of this project was to get a better understanding of the relationship between various public health factors and life expectancy. How can countries better allocate their limited resourced to improve their overall life expectancy. To answer that question A multiple linear regression model was created and then evaluated to determine if the approach was good. 
 
 ## Workflow
 
@@ -15,7 +14,7 @@ The overhead goal for this project is to find _which public health factors have 
 
 ## Data Sources
 
-The dataset was was collected from "WHO" and the United Nations website by Deeksha Russell and Duan Wang and is now stored on [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who "Kaggle"). It contains 2939 observations about different countries between the years 2000 and 2015.
+The dataset was was collected from World Health Organization (WHO) and can be foud at [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who "Kaggle"). It contains 2939 observations by country between the years 2000 and 2015.
 
 | Data                     | Data                             | Data                            |
 | ------------------------ | -------------------------------- | ------------------------------- |
@@ -32,25 +31,21 @@ The dataset was was collected from "WHO" and the United Nations website by Deeks
 
 To achieve the goal we utilized, [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html/ "Pandas") to clean and explore the data. Additionally, we used [Numpy](https://www.numpy.org/ "Numpy"), [Scipy](https://www.numpy.org/ "Scipy"), and [Sklearn](https://scikit-learn.org/stable/ "Sklearn") for data analysis.
 
-To increase collaboration efficiency we created a [GitHub](https://github.com/DaggerForce/Life_Expectancy_Project/ "GitHub") repository; this allowed us to work uninterrupted, simultaneously, and independently.
-
-The majority of our code was written in Jupyter Notebooks using Python. Furthermore, we used [VSCode](https://code.visualstudio.com/ "VSCode") to a module that contains our helper functions
-
 ### New Features
-Initially, we assessed which predictors could have the greatest influence on life expectancy from our dataset. Additionally, we created 4 more features that we suspected could affect life expectancy.
+Initially, a literature review and domain knowledge was used to select which predictors could have the greatest influence on life expectancy from our dataset as the baseline model. Additionally, we created 4 more features that we beleived could affect life expectancy and better explain the data. They include: 
 
-1. Population Size - We divided our countries into three catagories; Small, Medium, and Large.
-2. Lifestyle - We created an interaction between alcohol consumption and BMI
-3. Economy - The interaction between the population and the GDP.
+1. Population Size - A population range was created which includes three catagories; Small, Medium, and Large.
+2. Lifestyle - We created an interaction variable that takes alcohol consumption and BMI into consideration 
+3. Economy - A interaction variable between population and the gross domestic product (GDP).
 4. Death ratio - The ratio between adult and infant mortality.
 
 ### Cleaning the Data
 
-We began by removing all the fragmented observations from the dataset. We then checked for a possible relationship between life expectancy and all of the different features. After picking the features we wanted to include, we transformed some of them; to achieve a more linear relationship and a more normally distributed data.
+We began by removing all the fragmented observations from the dataset. We then checked if there was possible linearity between life expectancy and all features. When necessary certain features were transformed them to achieve a more linear relationship a more normally distribution.
 
 <img src=Images/before_after_transform.JPG alt="Before and after GDP log transformation historgram" width="450"/>
 
-We proceeded by searching for multicollinearity between the selected predictors by creating a correlation matrix. We defined multicollinearity cut-off at 0.8 and omitted alcohol consumption and GDP from the initial model.
+Next we assessed the multicollinearity model assumption between the selected predictors by creating a correlation matrix. A multicollinearity threshold was assigned at 0.8  which omitted alcohol consumption and GDP from the initial model.
 
 ![HeatMap](Images/heatmap.png)
 
@@ -71,7 +66,7 @@ We ran the model again after scaling the data, and also removing predictors that
 
 <img src=Images/scaled_model_summary.png alt="Scaled model summary" width="450"/>
 
-To test the model, we looked at the distribution of residuals for homoscedasticity. However, the residuals show a relationship. The heteroscedasticity is likely to have caused due to one or more of the predictors' distribution is skewed.
+To test the model, we looked at the distribution of residuals for homoscedasticity. However, the residuals show a relationship. The heteroscedasticity is likely to due to one or more of the predictors' distribution is skewed or that there might be features our dataset does not have information on. 
 
 <img src=Images/scaled_residuals.png alt="Residuals scatter plot and historgram" width="450"/>
 
@@ -86,4 +81,4 @@ Additionally, we tested the model with all the features we previously excluded (
 
 ## Take Home Message
 
-Our suggestions for countries looking to increase their life expectancy is to focus their resources mainly towards increasing HIV awareness. Additionally, we recommend increasing promoting education and to invest more in hospital maternity wards.
+Our suggestions for countries looking to increase their life expectancy is to focus their resources mainly towards increasing HIV awareness. Additionally, we recommend increasing promoting education and to invest more in hospital maternity wards. A possible next step would be to seperate developing and established countries as the public health factors effecting each may be very different. 
