@@ -8,8 +8,8 @@ Life expectancy is the average number of years that a group of persons in a popu
   * [Add Features](#new-features)
   * [Clean the Dataset](#cleaning-the-data)
 * [Create Models](#results)
-* [Test Models](#train-test-split)
-* [Recommendation](#take-home-message)
+* [Evaluating Models](#train-test-split)
+* [Recommendations](#take-home-message)
 
 
 ## Data Sources
@@ -79,6 +79,6 @@ Additionally, we tested the model with all the features we previously excluded (
 
 <img src=Images/model_all.png alt="Train test split model" width="450"/>
 
-## Take Home Message
+## Conclusion
 
 Our suggestions for countries looking to increase their life expectancy is to focus their resources mainly towards increasing HIV awareness. Additionally, we recommend increasing promoting education and to invest more in hospital maternity wards. A possible next step would be to seperate developing and established countries as the public health factors effecting each may be very different. 
