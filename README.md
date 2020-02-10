@@ -61,7 +61,7 @@ We then proceeded to remove all possible outliers by looking at box-whisker plot
 
 ## Results
 
-The first model we ran to predict life expectancy used the features; BMI, HIV, thinness 1-19, GDP, mortality ratio, lifestyle, education, infant mortality rate, economy, and population size. With R squared equal to 0.804, our initial model explains 80%~ of variation in life expectancy.
+The first model we ran to predict life expectancy used the features; BMI, HIV, thinness 1-19, GDP, mortality ratio, lifestyle, education, infant mortality rate, economy, and population size. With R squared equal to 0.804, our initial model explains 80% of variation in life expectancy.
 
 <img src=Images/init_summary.png alt="Initial model summary" width="450"/>
 
