@@ -16,7 +16,7 @@ Life expectancy is the average number of years that a group of persons in a popu
 
 The dataset was was collected from World Health Organization (WHO) and can be foud at [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who "Kaggle"). The final dataset contains 2939 observations where each row represents a country for a specific year. THere are a total of 193 countries with data from years 2000 to 2015. The features include immunization factors, mortality factors, economic factors, social factors and other health related factors.
 
-| Data                     | Data                             | Data                            |
+|                      The factors include:                                                     |
 | ------------------------ | -------------------------------- | ------------------------------- |
 | Country                  | HIV\AIDS                         | Measles                         |
 | Year                     | Hepatitis B                      | BMI                             |
