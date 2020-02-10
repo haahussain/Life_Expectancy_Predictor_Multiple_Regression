@@ -86,4 +86,4 @@ Additionally, we tested the model with all the features we previously excluded (
 
 A suggestion for countries looking to increase their global life expectancy is to focus their resources mainly on program and policies that increase HIV awareness and prevention. It's interesting to see that although the research and maintenance of HIV has increased it is still a major burden in developing nations. 
 Additionally, another suggestion would be for countries to develop more policies that increase access to basic education.
-A possible next step would be to separate developing and established countries as the public health factors effecting each type may be very different. Developing nations still lack fundamental resources while established nations may have completely y different issues such as cardiovascular disease and cancer (more data!).
+A possible next step would be to separate developing and established countries as the public health factors effecting each type may be very different. Developing nations still lack fundamental resources while established nations may have completely different issues such as cardiovascular disease and cancer (more data!).
