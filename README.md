@@ -3,7 +3,7 @@
 Life expectancy is the key metric for assessing population health. It tells us the average age of death in a population. Estimates suggest that in a pre-modern, poor world, life expectancy was 30 years in all regions of the world. Since 1900 the global average life expectancy has more than doubled and is now above 70 years. The inequality of life expectancy is still very large across countries. More recently the country with the lowest life expectancy is the Central African Republic at 53 years while in Japan life expectancy is 30 years greater.
 
 ### Project Description and Motivaton:
-Life expectancy is the average number of years that a group of persons in a population is expected to live. The intention of this project was to get a better understanding of the relationship between various public health factors and global life expectancy. How can countries better allocate their limited resources to improve their overall life expectancy. To answer that question multiple linear regression model were created and then evaluated to determine best fit. 
+Life expectancy is the average number of years that a group of persons in a population is expected to live. The intent of this project was to get a better understanding of the relationship between various public health factors and global life expectancy. How can countries better allocate their limited resources to improve their overall life expectancy. To answer that question multiple linear regression model were created and then evaluated to determine best fit. 
 
 ## Workflow
 
@@ -17,9 +17,9 @@ Life expectancy is the average number of years that a group of persons in a popu
 
 ## Data Sources
 
-The dataset was was collected from World Health Organization (WHO) and can be foud at [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who "Kaggle"). The final dataset contains 2939 observations where each row represents a country for a specific year. THere are a total of 193 countries with data from years 2000 to 2015. The features include immunization factors, mortality factors, economic factors, social factors and other health related factors.
+The Global Health Observatory (GHO) data repository under World Health Organization (WHO) keeps track of the health status as well as many other related factors for all countries. The final dataset contains 2939 observations where each row represents a country for a specific year. THere are a total of 193 countries with data from years 2000 to 2015. The features include immunization factors, mortality factors, economic factors, social factors and other health related factors.
 
-| Features                 |                                  |                                 |
+| Features include:        |                                  |                                 |
 | ------------------------ | -------------------------------- | ------------------------------- |
 | Country                  | HIV\AIDS                         | Measles                         |
 | Year                     | Hepatitis B                      | BMI                             |
