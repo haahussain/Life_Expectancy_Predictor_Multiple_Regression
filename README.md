@@ -52,7 +52,7 @@ Next we assessed the multicollinearity model assumption between the selected pre
 
 ![HeatMap](Images/heatmap.png)
 
-We then proceeded to remove all possible outliers by looking at box-whisker plots and scatter plots. Extreme obserations that were skewing the data were removed.
+We then proceeded to remove all possible outliers by looking at box-whisker plots and scatter plots. Extreme observations that were skewing the data were removed.
 
 <img src=Images/paired_before_lifestyle.png alt="Scatter Before removing outliers" width="350"/>
 
