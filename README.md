@@ -23,7 +23,7 @@ The dataset was was collected from World Health Organization (WHO) and can be fo
 | Life expectancy          | Polio                            | Status                          |
 | Adult mortality          | Diphtheria                       | Prevalence for malnutrition 5-9 |
 | Infant mortality         | GDP                              | Education                       |
-| Alcohol consumpton       | Population                       | Total expenditre on health      |
+| Alcohol consumpton       | Population                       | Total expenditure on health     |
 | Expenditure on health (%)| Prevalence for malnutrition 1-19 |
 
 
