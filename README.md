@@ -1,6 +1,6 @@
 # Life Expectancy
 ### Project Description and Motivaton
-Life expectancy is the average number of years that a group of persons in a population is expected to live. The intention of this project was to get a better understanding of the relationship between various public health factors and global life expectancy. How can countries better allocate their limited resources to improve their overall life expectancy. To answer that question A multiple linear regression model was created and then evaluated to determine if the approach was good. 
+Life expectancy is the average number of years that a group of persons in a population is expected to live. The intention of this project was to get a better understanding of the relationship between various public health factors and global life expectancy. How can countries better allocate their limited resources to improve their overall life expectancy. To answer that question multiple linear regression model were created and then evaluated to determine best fit. 
 
 ## Workflow
 
