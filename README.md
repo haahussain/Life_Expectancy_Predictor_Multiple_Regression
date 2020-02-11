@@ -35,7 +35,7 @@ The Global Health Observatory (GHO) data repository under World Health Organizat
 To achieve the goal we utilized various Python libraries such as [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html/ "Pandas") to clean and explore the data. [Numpy](https://www.numpy.org/ "Numpy"), [Scipy](https://www.numpy.org/ "Scipy"), and [Sklearn](https://scikit-learn.org/stable/ "Sklearn") for data analysis, descriptive statistics and modeling.
 
 ### New Features
-Initially literature review and domain knowledge was used to select which predictors could have the greatest influence on life expectancy for the baseline model. Additionally, we created 4 more features that we beleived could affect life expectancy and better explain the data. These features include: 
+Initially for the baseline model, literature review and domain knowledge was used to select which predictors could have the greatest influence on life expectancy. Additionally, 4 more features were created that could effect life expectancy and better explain the data. These 4 engineered features are:  
 
 1. Population Size - A population range was created which includes three catagories; Small, Medium, and Large.
 2. Lifestyle - We created an interaction variable that takes alcohol consumption and BMI into consideration. 
@@ -44,15 +44,15 @@ Initially literature review and domain knowledge was used to select which predic
 
 ### Cleaning the Data
 
-We began by removing all the fragmented observations from the dataset. We then checked if there was possible linearity between life expectancy and all features. When necessary certain features were transformed to achieve a more linear relationship and normal distribution.
+First, all the fragmented observations from the dataset were removed. In order to see if the data met the linearity model assumption scatter plots were generated for each predictor with the target variable and assessed. When necessary, certain features were transformed to achieve a more linear relationship and normal distribution.
 
 <img src=Images/before_after_transform.JPG alt="Before and after GDP log transformation historgram" width="450"/>
 
-Next we assessed the multicollinearity model assumption between the selected predictors by creating a correlation heatmap. A multicollinearity threshold was assigned at 0.8 which omitted alcohol consumption and GDP from the initial model.
+Next, the multicollinearity model assumption was assessed between the selected predictors by creating a correlation heat-map. A multicollinearity threshold was assigned at 0.8 and variables above the threshold were cut off.
 
 ![HeatMap](Images/heatmap.png)
 
-We then proceeded to remove all possible outliers by looking at box-whisker plots and scatter plots. Extreme observations that were skewing the data were removed.
+After that, all possible cases of outliers were assessed by looking at box-whisker plots and scatter plots. Extreme observations that were skewing the data were removed.
 
 <img src=Images/paired_before_lifestyle.png alt="Scatter Before removing outliers" width="350"/>
 
@@ -61,29 +61,28 @@ We then proceeded to remove all possible outliers by looking at box-whisker plot
 
 ## Results
 
-The first model we ran to predict life expectancy used the features; BMI, HIV, thinness 1-19, GDP, mortality ratio, lifestyle, education, infant mortality rate, economy, and population size. With R squared equal to 0.804, our initial model explains 80% of variation in life expectancy.
+The first model to predict life expectancy used the features; BMI, HIV, thinness 1–19, GDP, mortality ratio, lifestyle, education, infant mortality rate, economy, and population size. With the R squared equal to 0.804. In other words, the initial model explains 80% of variation in life expectancy (when compared to the mean line).
 
 <img src=Images/init_summary.png alt="Initial model summary" width="450"/>
 
-We ran the model again after scaling the data, and also removing predictors that were deemed insignificant (P-value > 0.05).
-
+Another model was built in which the data was scaled and insignificant predictors (p-value > .05) from the baseline model were removed.
 <img src=Images/scaled_model_summary.png alt="Scaled model summary" width="450"/>
 
-To test the model, we looked at the distribution of residuals for homoscedasticity. The residuals although scattered did suggest a minor positive linear relationship. The heteroscedasticity is likely to due to one or more of the predictors' distribution being skewed or that there might be missing features our dataset does not have information on. 
+To test the model for another linear regression model assumption, the distribution of residuals for homoscedasticity was evaluated. The residuals although scattered did suggest a minor positive linear relationship. This heteroscedasticity is likely to due predictor variable distribution being skewed or there might be missing features that the dataset does not have information on.
 
 <img src=Images/scaled_residuals.png alt="Residuals scatter plot and historgram" width="450"/>
 
-We conducted a train, test split test using 80% of our data to predict the other 20%. The model's mean absolute error was 3.022
+We conducted a train, test split test using 80% of our data to to train the model and predict on the other 20%. The model's mean absolute error was 3.022
 
 <img src=Images/model_final.png alt="Train test split model" width="450"/>
 
 ### Train Test Split
-Additionally, we tested the model with all the features we previously excluded (BMI, alcohol, GDP, and population size). Expectedly, the model mean absolute error is slightly smaller (2.995). However, the deviation is still in years meaning the model has to be refined.
+Additionally, we tested the model with all the features we previously excluded (BMI, alcohol, GDP, and population size). The model mean absolute error slightly improved to 2.995.
 
 <img src=Images/model_all.png alt="Train test split model" width="450"/>
 
 ## Conclusion
 
 A suggestion for countries looking to increase their global life expectancy is to focus their resources mainly on program and policies that increase HIV awareness and prevention. It's interesting to see that although the research and maintenance of HIV has increased it is still a major burden in developing nations. 
-Additionally, another suggestion would be for countries to develop more policies that increase access to basic education.
+Additionally, another suggestion would be for countries to develop more policies and allocate more resources that increase access to education. It’s important to note are countries not giving priority to education or do they not have enough resources to provide more education? Are these countries too focused on survival to the point that more education is secondary?
 A possible next step would be to separate developing and established countries as the public health factors effecting each type may be very different. Developing nations still lack fundamental resources while established nations may have completely different issues such as cardiovascular disease and cancer (more data!).
