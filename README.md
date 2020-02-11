@@ -17,7 +17,7 @@ Life expectancy is the average number of years that a group of persons in a popu
 
 ## Data Sources
 
-The Global Health Observatory (GHO) data repository under World Health Organization (WHO) keeps track of the health status as well as many other related factors for all countries. The final dataset contains 2939 observations where each row represents a country for a specific year. THere are a total of 193 countries with data from years 2000 to 2015. The features include immunization factors, mortality factors, economic factors, social factors and other health related factors.
+The Global Health Observatory (GHO) data repository under World Health Organization (WHO) keeps track of the health status as well as many other related factors for all countries. The final dataset contains 2939 observations where each row represents a country for a specific year. There are a total of 193 countries with data from years 2000 to 2015. The features include immunization factors, mortality factors, economic factors, social factors and other health related factors.
 
 | Features include:        |                                  |                                 |
 | ------------------------ | -------------------------------- | ------------------------------- |
