@@ -1,4 +1,5 @@
-# Life Expectancy
+# Which Public Health Factors have the Greatest Impact on Life Expectancy?
+![GlobePic](Images/Life_expect_globe_pic.png)
 ### Background Information: 
 Life expectancy is the key metric for assessing population health. It tells us the average age of death in a population. Estimates suggest that in a pre-modern, poor world, life expectancy was 30 years in all regions of the world. Since 1900 the global average life expectancy has more than doubled and is now above 70 years. The inequality of life expectancy is still very large across countries. More recently the country with the lowest life expectancy is the Central African Republic at 53 years while in Japan life expectancy is 30 years greater.
 
