@@ -67,7 +67,7 @@ The first model to predict life expectancy used the features; BMI, HIV, thinness
 
 <img src=Images/init_summary.png alt="Initial model summary" width="450"/>
 
-Another model was built in which the data was scaled and insignificant predictors (p-value > .05) from the baseline model were removed.
+Another model was built in which the data was scaled and insignificant predictors (p-value > .05) from the baseline model were removed. Since various features have different units of measurement and the data has been transformed to meet model assumptions, scaling the data allows results to be more comparable and interpretable.
 
 <img src=Images/scaled_model_summary.png alt="Scaled model summary" width="450"/>
 
