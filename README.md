@@ -34,7 +34,7 @@ The Global Health Observatory (GHO) data repository under World Health Organizat
 
 ## Technical Description
 
-To achieve the goal we utilized various Python libraries such as [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html/ "Pandas") to clean and explore the data. [Numpy](https://www.numpy.org/ "Numpy"), [Scipy](https://www.numpy.org/ "Scipy"), and [Sklearn](https://scikit-learn.org/stable/ "Sklearn") for data analysis, descriptive statistics and modeling.
+To achieve the goal various Python libraries were used, which include: [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html/ "Pandas") to clean and explore the data. [Numpy](https://www.numpy.org/ "Numpy"), [Scipy](https://www.numpy.org/ "Scipy"), and [Sklearn](https://scikit-learn.org/stable/ "Sklearn") for data analysis, descriptive statistics and modeling.
 
 ### New Features
 Initially for the baseline model, literature review and domain knowledge was used to select which predictors could have the greatest influence on life expectancy. Additionally, 4 more features were created that could effect life expectancy and better explain the data. These 4 engineered features are:  
@@ -86,6 +86,6 @@ Additionally, we tested the model with all the features we previously excluded (
 
 ## Conclusion
 
-A suggestion for countries looking to increase their global life expectancy is to focus their resources mainly on program and policies that increase HIV awareness and prevention. It's interesting to see that although the research and maintenance of HIV has increased it is still a major burden in developing nations. 
-Additionally, another suggestion would be for countries to develop more policies and allocate more resources that increase access to education. It’s important to note are countries not giving priority to education or do they not have enough resources to provide more education? Are these countries too focused on survival to the point that more education is secondary?
-A possible next step would be to separate developing and established countries as the public health factors effecting each type may be very different. Developing nations still lack fundamental resources while established nations may have completely different issues such as cardiovascular disease and cancer (more data!).
+A suggestion for countries looking to increase their global life expectancy is to focus their resources mainly on programs and policies that increase HIV awareness and prevention. It's interesting to see that although the research and maintenance of HIV has increased it is still a major burden in developing nations. 
+Additionally, another suggestion would be for countries to develop policies and allocate more resources that increase access to education. The results raise another question: Are countries not giving priority to education or do they not have enough resources to provide more education? Are these countries too focused on survival to the point that more education is secondary?
+A possible next step would be to separate 'developing' and 'established' countries as the public health factors effecting each type may be very different. Developing nations still lack fundamental resources while established nations may have completely different issues such as cardiovascular disease and cancer (more data!).
